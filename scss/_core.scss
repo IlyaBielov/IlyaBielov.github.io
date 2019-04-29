@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  height: 100%;
+}
+
+.container {
+  @include min-max(320px, 100%, 0);
+}
+
+.wrap {
+  @include min-max(320px, 960px, 0px);
+}
+
+.bg {
+  background-color: $bg;
+}
+
+
+p {
+  color: $black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
