@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  padding-top: 28px;
 
   .main-wrap {
     display: flex;
@@ -12,13 +13,16 @@
     width: 280px;
   }
 
+  .main-section {
+    padding-bottom: 28px; 
+  }
+
   .main-heading {
     color: $bg-header;
     font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 28px;
-    margin-top: 28px;
   }
 
   .main-txt {
