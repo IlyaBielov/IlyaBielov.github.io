@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  height: 76px;
+  background-color: $bg-header;
+  text-align: center;
+  align-items: center;
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .link {
+      color: $white;
+      opacity: 0.6;
+      text-align: center;
+      width: 100%;
+      padding: 5px 0 5px 0;
+    }
+  }
+}
