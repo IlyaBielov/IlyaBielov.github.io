@@ -1,0 +1,61 @@
+.main {
+  @include min-max(320px, 680px, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  .main-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 280px;
+  }
+
+  .main-heading {
+    color: $bg-header;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 28px;
+    margin-top: 28px;
+  }
+
+  .main-txt {
+    color: $white;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px; 
+  }
+
+  .main-skills {
+    .skills-list .list-item {
+      color: $white;
+      font-size: 18px;
+      padding-bottom: 12px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.show-560px {
+  display: none;
+}
+
+@media screen and (max-width: 560px) {
+  .main .main-wrap {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .main .main-wrap .main-education {
+    display: none;
+  }
+
+  .main .main-wrap .show-560px {
+    display: block;
+  }
+}
