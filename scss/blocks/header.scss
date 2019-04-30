@@ -47,6 +47,15 @@
       padding: 10px 0 5px 0;
     }
   }
+
+  .header-social {
+    text-align: center;
+    padding-top: 6px;
+
+    .icon {
+      width: 32px;
+    }
+  }
 }
 
 .alnl {
@@ -94,7 +103,6 @@
 
 @media screen and (max-width: 348px) {
   .header {
-
     .header-developer {
       font-size: 20px;
     }
