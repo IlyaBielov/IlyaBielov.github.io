@@ -2,10 +2,10 @@
   box-sizing: border-box;
   padding-top: 100px;
   padding-bottom: 38px;
-  background-color: $bg-header;
+  background-color: $main;
   min-height: 360px;
 
-  .header-heading {
+  &-heading {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,36 +24,38 @@
     }
   }
 
-  .header-developer {
+  &-developer {
     text-align: center;
     color: $white;
     text-transform: uppercase;
     font-style: italic;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     letter-spacing: 4px;
     margin-bottom: 14px;
   }
 
-  .header-links {
+  &-links {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
     .link {
+      font-size: 24px;
       text-align: center;
       width: 100%;
       padding: 10px 0 5px 0;
     }
   }
 
-  .header-social {
+  &-social {
     text-align: center;
     padding-top: 6px;
 
     .icon {
-      width: 32px;
+      width: 44px;
+      margin: 0 5px;
     }
   }
 }
